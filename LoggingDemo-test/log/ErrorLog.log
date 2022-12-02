@@ -1,0 +1,6 @@
+02-Dec-2022 11:22:12 INFO - Jon logged in successfully
+02-Dec-2022 11:22:51 ERROR - Service.INVALID_CREDENTIALS
+java.lang.Exception: Service.INVALID_CREDENTIALS
+	at com.java.loggingdemo.UserAuthentication.loginUser(UserAuthentication.java:13) [bin/:?]
+	at com.java.loggingdemo.Tester.main(Tester.java:7) [bin/:?]
+02-Dec-2022 11:32:06 INFO - Jon logged in successfully
