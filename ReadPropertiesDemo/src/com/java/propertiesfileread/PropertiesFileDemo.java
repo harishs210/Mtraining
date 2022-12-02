@@ -9,13 +9,11 @@ import org.apache.commons.configuration2.ex.ConfigurationException;
 public class PropertiesFileDemo {
 
 	public static void main(String[] args) {
-		//public PropertiesConfiguration properties(String fn)throws ConfigurationException
 		Configurations configurations = new Configurations();
 		try {
 			PropertiesConfiguration config = configurations.properties("configuration.properties");
 			Iterator<String> keys  = config.getKeys();
 			while(keys.hasNext()) {
-				//System.out.println(keys.next());
 				String key = keys.next();
 				System.out.println(key + ":"+ config.getProperty(key));
 			}
