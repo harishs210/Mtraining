@@ -3,53 +3,51 @@ package com.mt.lamabdapalindrom;
 public class Lambda {
 
 	    
-	    public interface PerformOperation {
-	        public boolean operation(int x);
+	    public interface Operation {
+	        public boolean operation(int n);
 	    }
 	    
 	    public static void main(String[] args) {
-	        PerformOperation isOdd = x-> x%2 != 0;
+	        int oddOrEven= 48;
+	    	
+	    	Operation isOdd = n-> n%2 != 0;
 	        
-	        isOdd.operation(3);
-	        isOdd.operation(8);
+	       System.out.println(oddOrEven +"isOdd?"+isOdd.operation(oddOrEven)); 
 	        
+	       int pNum= 13; 
+	       
+	       Operation isPrime = n-> {
+	            
+	            if (n <= 1)
+	                return false;
+	      
+	            for (int i = 2; i < n; i++)
+	                if (n % i == 0)
+	                    return false;
+	      
+	            return true;
+	        };
+	        System.out.println(pNum+" is Prime?"+isPrime.operation(pNum)); 
 	        
-	        PerformOperation isPrime = x-> {
-	            boolean flag = false;
-	            for (int i = 2; i <= x / 2; ++i) {
-	                  if (x % i == 0) {
-	                    flag = true;
-	                    break;
-	                  }
-	                }
-	            if (!flag)
-	                  return true;
-	                else
-	                 return false;
-	            };
-	    
-	        System.out.println("7 is Prime Number ?"+isPrime.operation(7));
-	        System.out.println("13 is Prime Numver ?"+isPrime.operation(29));
-	        
-	        PerformOperation isPalindrome = x -> {
-	            int newNum = 0, remainder, temp;
-	            temp = x;
+	        Operation isPalindrome = n -> {
+	            int num = 0, rem, temp;
+	            temp = n;
 	            
 	            while(temp != 0){
-	                  remainder = temp % 10;
-	                  newNum = newNum*10 + remainder;
+	            	rem = temp % 10;
+	                  num = num*10 + rem;
 	                  temp = temp/10;
 	            }
 	            
-	            if (newNum == x)
+	            if (num == n)
 	                 return true;
 	            else
 	                return false;
 	            
 	        };
 	        
-	        System.out.println("454 is palindrome ?"+isPalindrome.operation(454));
-	        System.out.println("233 is palindrome ?"+isPalindrome.operation(233));
+	        int pal =121;
+	        System.out.println(pal+" isPalindrome?"+isPalindrome.operation(pal));
 	    }
 
 
