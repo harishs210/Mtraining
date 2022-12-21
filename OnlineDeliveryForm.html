@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--Registration form starts-->
+        <form action="">
+            <table class="tables">
+
+                <tr>
+                    <th colspan="3">XYZ Online Delivery</th>
+                </tr>
+                <tr>
+                    <th colspan="2">Personal Details</th>
+                </tr>
+                <tr>
+                    <td><label>First Name</label></td>
+                    <td><input type="text" name="firstName" style="background-color: antiquewhite;"></td>
+                </tr>
+                <tr>
+                    <td><label>Phone Number</label></td>
+                    <td><input type="text" name="phonenumber" style="background-color: antiquewhite;"></td>
+                </tr>
+                <tr>
+                    <th colspan="2">Order Preference</th>
+                </tr>
+                <td><label>Size</label></td>
+                <td>
+                    <input type="radio" name="size" value="Small">Small
+                    <input type="radio" name="size" value="Medium">Medium
+                    <input type="radio" name="size" value="Large">Large
+                </td>
+
+
+                <tr>
+                    <td>Base</td>
+                    <td>
+                        <select name="base" id="base">
+                            <option value="it1">Chicken Stuff</option>
+                            <option value="it2">Pizza</option>
+                        </select>
+
+                    </td>
+                </tr>
+                <tr>
+                    <td>Toppings</td>
+                    <td>
+                        <input type="checkbox" name="base" id="top1">Cheese
+                        <input type="checkbox" name="base" id="top2">Olive
+                        <input type="checkbox" name="base" id="top3">Tomatoes
+                        <input type="checkbox" name="base" id="top4">Capsicum
+                    </td>
+                </tr>
+                <tr>
+                    <td>Additional Details</td>
+                    <td><input type="text" name="additinal" style="background-color: antiquewhite;"></td>
+                </tr>
+                <tr>
+                    <td colspan="2">
+                        <span>Confirm Details and Proceed To pay? </span>
+                        <input type="radio" name="boolean" value="Yes">Yes
+                        <input type="radio" name="boolean" value="No">No
+                        
+                    </td>
+                </tr>
+                <tr>
+
+                    <td colspan="2"><input type="submit" value="Submit"></td>
+                </tr>
+            </table>
+        </form>
+        <!--Registration form ends-->
+    </div>
+</body>
+
+</html>

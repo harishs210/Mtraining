@@ -1,0 +1,48 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    background-color: aqua;
+    padding: 3rem;
+}
+.contactus-wrapper{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin-top: 2rem;
+}
+.contactus-form{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+    background-color: #fff;
+    height: 100%;
+    padding: 2rem;
+}
+.reachus{
+    width: 40%;
+    background-color: blue;
+    color: #fff;
+    height: 100%;
+}
+input[type=text]{
+    width: 100%;
+    padding: 8px 10px;
+    box-sizing: border-box;
+    border: none;
+    border-bottom: 1px solid black
+}
+input[type=submit]{
+    padding: 8px 20px;
+    border: none;
+    border-radius: 20px;
+    background-color: blue;
+    color: #fff;
+    margin-bottom: 1.5rem;
+}
