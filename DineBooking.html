@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div style="display: flex; justify-content: center;">
+        <!--Dine Booking-->
+        
+        <form action="">
+            <h2 style="text-align: center;">Dine Booking</h2>
+            <table>
+                <tr>
+                    <td>Visitor Name :</td>
+                    <td><input type="text" name="vn"></td>
+                </tr>
+                <tr>
+                    <td>Number of Members:</td>
+                    <td><input type="text" name="nom"></td>
+                </tr>
+                <tr>
+                    <td>Contact No:</td>
+                    <td><input type="text" name="contcat"></td>
+                </tr>
+                <tr>
+                    <td>Email:</td>
+                    <td><input type="text" name="email"></td>
+                </tr>
+                <tr>
+                    <td>Type of Food:</td>
+                    <td>
+                        <input type="checkbox" name="top" id="top1">South Indian
+                        <input type="checkbox" name="top" id="top2">North Indian
+                        <input type="checkbox" name="top" id="top3">Chinese
+                        <input type="checkbox" name="top" id="top4">Western
+                    </td>
+                </tr>
+                <tr>
+                    <td>Room Status:</td>
+                    <td>
+                        <input type="radio" name="condition" value="AC">AC
+                        <input type="radio" name="condition" value="No">NonAC
+                    </td>
+                </tr>
+                <tr>
+                    <td>Venue Preference</td>
+                    <td>
+                        <select name="venue" id="venue">
+                            <option value="it1">Chennai</option>
+                            <option value="it2">Kolkata</option>
+                            <option value="it3">Delhi</option>
+                            <option value="it4">Mumbai</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <input type="submit" value="Submit" >
+                    </td>
+                    <td>
+                        <input type="submit" value="Reset" >
+                    </td>
+                </tr>
+            </table>
+        </form>
+        <!--Registration form ends-->
+    </div>
+</body>
+
+</html>
