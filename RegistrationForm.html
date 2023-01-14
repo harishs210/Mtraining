@@ -1,0 +1,95 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registration Form</title>
+</head>
+
+<body>
+    <div class="container">
+        <!--Registration form starts-->
+        <form action="#">
+            <table border="2">
+                <caption>XYZ University Registrstion form</caption>
+                <tr>
+                    <th colspan="3">XYZ University Registrstion form</th>
+                </tr>
+                <tr>
+                    <th rowspan="4">Personal Details</th>
+                    <td><label>First Name</label></td>
+                    <td><input required type="text" name="firstName" style="background-color: antiquewhite;"></td>
+                </tr>
+                <tr>
+
+                    <td><label>Last Name</label></td>
+                    <td><input required type="text" name="lastName"  style="background-color: antiquewhite;"></td>
+                </tr>
+                <tr>
+
+                    <td><label>Date of Birth</label></td>
+                    <td><input type="text" name="dob"></td>
+                </tr>
+                <tr>
+                    <td><label>Gender</label></td>
+                    <td>
+                        <input type="radio" name="gender" value="Male">Male
+                        <input type="radio" name="gender" value="Female">Female
+                        <input type="radio" name="gender" value="Other">Other
+                    </td>
+                </tr>
+                <tr>
+                    <th rowspan="4"> Academic Details</th>
+                    <td><label>Degree</label></td>
+                    <td>
+                        <select name="degree" id="degree">
+                            <option value="Btech">Bachelors</option>
+                            <option value="Masters">Masters</option>
+                            <option value="Doctorate">Doctorate</option>
+                        </select>
+                    </td>
+                </tr>
+                <tr>
+
+                    <td>Specialization</td>
+                    <td><input type="text" name="moi" value="Computer Science"></td>
+                </tr>
+                <tr>
+
+                    <td>Mode of Instruction</td>
+                    <td><input type="checkbox" name="classroom" id="classroom">Classroom<input type="checkbox"
+                            name="online" id="online">Online</td>
+                </tr>
+                <tr>
+
+                    <td>Current GPA</td>
+                    <td><input type="text" name="gpa"></td>
+                </tr>
+                <tr>
+                    <th rowspan="2"> Contact Details</th>
+                    <td><label>Phone Number</label></td>
+                    <td><input required type="text" name="phonenumber"  style="background-color: antiquewhite;"></td>
+                </tr>
+                <tr>
+
+                    <td><label>Address</label></td>
+                    <td><input required type="text" name="adress"  style="background-color: antiquewhite;"></td>
+                </tr>
+                <tr>
+                    <td colspan="3"> <span> I have assured all the details are correct</span>
+                        <input type="checkbox"
+                            name="agreed" id="agreed">
+                    </td>
+                </tr>
+                <tr>
+                    <td colspan="3"><input type="submit" value="Register" ></td>
+                </tr>
+            </table>
+        </form>
+        <!--Registration form ends-->
+    </div>
+</body>
+
+</html>
