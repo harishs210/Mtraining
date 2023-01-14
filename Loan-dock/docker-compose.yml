@@ -1,0 +1,21 @@
+version: "3.8"
+
+services:
+  Loan-dock:
+    image: harish210/loan-dock:latest
+    mem_limit: 700m
+    ports:
+      - "8091:8091"
+    networks:
+      - hbank-network
+    
+  card-dock:
+    image: harish210/card-dock:latest
+    mem_limit: 700m
+    ports:
+      - "8090:8090"
+    networks:
+      - hbank-network
+    
+networks:
+  hbank-network:
