@@ -62,7 +62,12 @@ public class User {
 	}
 	
 	public boolean makePayment(double billAmount) {
-		return false;
+		if(this.walletBaance<billAmount) {
+			return false;
+		}
+		this.walletBaance-= billAmount;
+		
+		return true;
 	}
 	
 

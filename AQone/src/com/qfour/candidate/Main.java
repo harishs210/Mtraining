@@ -2,7 +2,9 @@ package com.qfour.candidate;
 
 public class Main {
 	public static void main(String[] args) throws EduException, AgeException {
-		Candidate candidate = new Candidate("Rahul", 23, "Btech");
+//		Candidate candidate = new Candidate("Rahul", 17, "MCa");
+		Candidate candidate = new Candidate("Rahul", 17, "Btech");
+		System.out.println("Initialised candidate ");
 		
 		String education =candidate.getEducation();
 		if (!(education.equalsIgnoreCase("Btech")))
