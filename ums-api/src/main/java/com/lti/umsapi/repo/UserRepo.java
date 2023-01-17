@@ -6,4 +6,5 @@ import com.lti.umsapi.entity.User;
 
 public interface UserRepo extends JpaRepository<User, Integer>{
 
+	
 }

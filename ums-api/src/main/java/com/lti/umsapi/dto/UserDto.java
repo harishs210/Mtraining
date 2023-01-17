@@ -8,7 +8,6 @@ public class UserDto {
 	private String phone;
 	private String website;
 	
-	
 	public UserDto() {
 		super();
 	}
